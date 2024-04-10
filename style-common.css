@@ -1,0 +1,187 @@
+.nav-pages {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-pages li {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-pages li a {
+    text-decoration: none;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-center-horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+.panel-topdown {
+    display: flex;
+    flex-direction: column;
+    background-color: #7395AE;
+    border-radius: 25px;
+    padding: 40px;
+    margin: 10px;
+
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.panel-topdown2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #7395AE;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 5px;
+
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.panel-topdown3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #7395AE;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 5px;
+
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-pages li:hover {
+    background-color: lightcoral;
+}
+
+.nav-title {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-subtitle {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-div-upper {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+}
+
+.body-background {
+    background-color: #557A95;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.nav-div-under {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-div {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Blank_page_intentionally_end_of_book.jpg/800px-Blank_page_intentionally_end_of_book.jpg");
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw auto;
+    background-blend-mode: color-burn;
+}
+
+.nav-div-under {
+    min-height: 10vh;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.nav-div-under .page-title {
+    font-size: 150px;
+    transform: translateY(-500px);
+}
+
+.nav-div-under .page-title.active {
+    animation-name: slideup-fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes slideup-fade {
+    0% {
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        position: relative;
+        opacity: 1;
+    }
+}
+
+.panel-subtitle {
+    font-weight: lighter;
+}
+
+.panel-end {
+    min-height: 50px;
+
+    background-color: #7395AE;
+    color: black;
+}
+
+.panel-end-subtitle {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.panel-end-hyperlink {
+    display: flex;
+}
+
+.panel-end-hyperlink .panel-end-svg {
+    margin-right: 20px;
+}
+
+.panel-end-hyperlink svg {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.background-img-fit {
+    background-size: 100%;
+}

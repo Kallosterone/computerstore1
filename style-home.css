@@ -1,0 +1,66 @@
+.shop-itemgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.shop-item-picbackground {
+    height: 150px;
+    background-size: 100% auto;
+}
+
+.shop-item-buttontab {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 0px;
+}
+
+.shop-item-title {
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
+
+.shop-item-buttontext {
+    text-align: center;
+    cursor: default;
+    margin: 0;
+}
+.panel-topdown2:has(.shop-item-buttontext) {
+    transition: 0.5s;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.panel-topdown2:has(.shop-item-buttontext):hover {
+    background-color: #557A95;
+}
+
+.modal-expandImg {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-expandImg > .modal-expandImg-grid {
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr 25fr;
+    grid-row-gap: 5px;
+}
+
+.modal-expandImg-grid .panel-topdown2:nth-child(2) {
+    background-color: aliceblue;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
